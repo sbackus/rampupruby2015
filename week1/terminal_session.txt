@@ -1,0 +1,251 @@
+chicago profiles? wtf?
+☁  RecipeProject [master] cd
+
+☁  ~  pwd
+
+/Users/sbackus
+
+☁  ~  ls
+
+Applications      Dropbox      Code       Library   Public        Desktop               Movies            workspace    Documents          Music              Downloads        Pictures
+
+☁  ~  cd Code
+
+☁  Code  pwd
+
+/Users/sbackus/Code
+
+☁  Code  cd
+
+☁  ~  cd Code
+
+☁  Code  ls
+
+MagicRNN                      csspractice                   pictionary-telephone          tempgitthing
+
+RobotFindsKitten              grunt-contrib-jasmine-example restaurant                    untitled
+
+SIskillsassessment            hello.rb                      ruby_koans                    velocityTest.patch
+
+SimForest                     imdb                          rubyrampup2015                whatsyourrange
+
+SuperSMSSender                index.html                    sample_app                    wth_2015
+
+SuperTicTacToe                jasmine-standalone-2.3.4.zip  sandbox                       yeomen_experiments
+
+TheTriforceOfCourage          leaflet                       script3.sh                    youtube-tutorials
+
+☁  Code  cd RampUp
+
+☁  RampUp [master] ⚡ cd ..
+
+☁  Code  cp hello.rb RampUp
+
+☁  Code  cd RampUp
+
+☁  RampUp [master] ⚡ ls
+
+Gemfile            README.md          fizzbuzz.rb        guesswho2.rb       trader.rb
+
+Gemfile.lock       cars.rb            game               hello.rb
+
+GuessWho.rb        cypher.rb          grandma.rb         my_website
+
+LICENSE            encrypter.rb       guess_who_data.txt script.rb
+
+☁  RampUp [master] ⚡ cd ..
+
+☁  Code  cd ..
+
+☁  ~  cd Code/RampUp
+
+☁  RampUp [master] ⚡ rm -i hello.rb
+
+remove hello.rb? y
+
+☁  RampUp [master] ⚡ ls
+
+Gemfile            README.md          fizzbuzz.rb        guesswho2.rb
+
+Gemfile.lock       cars.rb            game               my_website
+
+GuessWho.rb        cypher.rb          grandma.rb         script.rb
+
+LICENSE            encrypter.rb       guess_who_data.txt trader.rb
+
+☁  RampUp [master] ⚡ rm -h
+
+rm: illegal option -- h
+
+usage: rm [-f | -i] [-dPRrvW] file ...
+
+       unlink file
+
+☁  RampUp [master] ⚡ rm -help
+
+rm: illegal option -- h
+
+usage: rm [-f | -i] [-dPRrvW] file ...
+
+       unlink file
+
+☁  RampUp [master] ⚡ rm --help
+
+rm: illegal option -- -
+
+usage: rm [-f | -i] [-dPRrvW] file ...
+
+       unlink file
+
+☁  RampUp [master] ⚡ man rm
+
+☁  RampUp [master] ⚡ man rm
+
+
+
+☁  rampupruby2015  irb
+
+2.2.0 :001 > "test".capitalize
+
+ => "Test"
+
+2.2.0 :002 > "test".include?("e")
+
+ => true
+
+2.2.0 :003 > "test".include?("x")
+
+ => false
+
+2.2.0 :004 > true.class
+
+ => TrueClass
+
+2.2.0 :005 > false.class
+
+ => FalseClass
+
+2.2.0 :006 > " asdf  asdfkjasdlfjk34857"
+
+ => " asdf  asdfkjasdlfjk34857"
+
+2.2.0 :007 > 3
+
+ => 3
+
+2.2.0 :008 > 4
+
+ => 4
+
+2.2.0 :009 > 4.class
+
+ => Fixnum
+
+2.2.0 :010 > "4".class
+
+ => String
+
+2.2.0 :011 > 4 + "4"
+
+TypeError: String can't be coerced into Fixnum
+
+from (irb):11:in `+'
+
+from (irb):11
+
+from /Users/sbackus/.rvm/rubies/ruby-2.2.0/bin/irb:11:in `<main>'
+
+2.2.0 :012 > "4" + "4"
+
+ => "44"
+
+2.2.0 :013 > 44.to_s
+
+ => "44"
+
+2.2.0 :014 > "44".to_n
+
+NoMethodError: undefined method `to_n' for "44":String
+
+from (irb):14
+
+from /Users/sbackus/.rvm/rubies/ruby-2.2.0/bin/irb:11:in `<main>'
+
+2.2.0 :015 > "44".to_i
+
+ => 44
+
+2.2.0 :016 > "44".to_f
+
+ => 44.0
+
+2.2.0 :017 > "cat"
+
+ => "cat"
+
+2.2.0 :018 > pet = "cat"
+
+ => "cat"
+
+2.2.0 :019 > String pet = "cat"
+
+ => "cat"
+
+2.2.0 :020 > pet = "cat"
+
+ => "cat"
+
+2.2.0 :021 > bank_account = 20
+
+ => 20
+
+2.2.0 :022 > Fixnum bank_account = 20
+
+NoMethodError: undefined method `Fixnum' for main:Object
+
+from (irb):22
+
+from /Users/sbackus/.rvm/rubies/ruby-2.2.0/bin/irb:11:in `<main>'
+
+2.2.0 :023 > 20 == 20
+
+ => true
+
+2.2.0 :024 > 20 == 21
+
+ => false
+
+2.2.0 :025 > "hello" == "he" + "llo"
+
+ => true
+
+2.2.0 :026 > 4+5 == 9
+
+ => true
+
+2.2.0 :027 > bank_account
+
+ => 20
+
+2.2.0 :028 > if bank_account == 20 do
+
+2.2.0 :029 >       "go to taco bell"
+
+2.2.0 :030?>     else
+
+2.2.0 :031 >       "stay home"
+
+2.2.0 :032?>     end
+
+2.2.0 :033?>
+
+2.2.0 :034 >     exit
+
+2.2.0 :035?>   exit
+
+2.2.0 :036?>   ^C
+
+2.2.0 :036 > ^C
+
+
+2.2.0 :036 > exit
