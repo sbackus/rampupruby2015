@@ -1,40 +1,33 @@
-encryption = {"a" => "b",
-"b" => "c",
-"c" => "d",
-"d" => "e",
-"e" => "f",
-"f" => "g",
-"g" => "h",
-"h" => "i",
-"i" => "j",
-"j" => "k",
-"k" => "l",
-"l" => "m",
-"m" => "n",
-"n" => "o",
-"o" => "p",
-"p" => "q",
-"q" => "r",
-"r" => "s",
-"s" => "t",
-"t" => "u",
-"u" => "v",
-"v" => "w",
-"w" => "x",
-"x" => "y",
-"y" => "z",
-"z" => " ",
-" " => "a"}
+def shift letter, distance
+  alphabet = (" ".."z").to_a
+  letter_index = alphabet.find_index(letter)
+  if letter_index + distance > alphabet.length
+    shifted_index = distance - (alphabet.length - letter_index)
+  else
+    shifted_index = letter_index + distance
+  end
+  return alphabet[shifted_index]
+end
 
 
-def encrypt phrase, encryption
+def encrypt phrase
   chars = phrase.split("")
   answer = ""
   chars.each do |character|
-    answer << encryption[character]
+    answer << shift(character, 5)
+  end
+  return answer
+end
+
+def decrypt phrase
+  chars = phrase.split("")
+  answer = ""
+  chars.each do |character|
+    answer << shift(character, -5)
   end
   return answer
 end
 
 
-puts encrypt "test", encryption
+puts encrypt 'Hello World'
+puts decrypt 'Mjqqt%\twqi'
